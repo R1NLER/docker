@@ -1,3 +1,13 @@
+#Install wireguard on your Synology NAS, don't open it at the end, then, log via ssh into the NAS and run the following commands.
+
+sudo /var/packages/WireGuard/scripts/start      #This command runs wireguard app on your NAS
+
+sudo wg-autostart enable wg0    #This command enables autostart of wireguard.
+
+
+#Then, run this command to enable the wg-easy container to manage your wireguard VPN.
+
+
 sudo docker run -d \
 --name=wg-easy \
 -e WG_HOST=your.dns.here \
