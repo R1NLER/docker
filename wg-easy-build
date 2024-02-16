@@ -1,0 +1,14 @@
+FROM alpine:latest
+
+# Instalar dependencias
+RUN apk --no-cache add wireguard-tools iptables iproute2
+
+# Copiar el script wg-easy al contenedor
+COPY wg-easy /usr/local/bin/wg-easy
+RUN chmod +x /usr/local/bin/wg-easy
+
+# Puerto de escucha de WireGuard
+EXPOSE 51820/udp
+
+# Comando predeterminado al iniciar el contenedor
+CMD ["wg-easy"]
