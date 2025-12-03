@@ -1,0 +1,12 @@
+services:
+  acestream-http-proxy:
+    image: ghcr.io/martinbjeldbak/acestream-http-proxy:latest
+    container_name: acestream-http-proxy
+    restart: unless-stopped
+    ports:
+      - "6878:6878"
+    environment:
+      ALLOW_REMOTE_ACCESS: yes
+      TZ: Europe/Madrid
+    dns:
+      - 74.115.172.133
