@@ -11,6 +11,7 @@ fireos.amazon.com
 
 # --- Download/CDN endpoints often used by system components ---
 amzdigitaldownloads.edgesuite.net
+amzdigital-a.akamaihd.net.
 
 # --- Device metrics / telemetry ---
 device-metrics.amazon.com
