@@ -1,0 +1,23 @@
+# Fire TV / Amazon update & telemetry blocklist for Pi-hole
+# Purpose: reduce/stop Fire OS updates and device telemetry via DNS blocking
+# Notes:
+# - Blocking updates may impact some Amazon services on certain devices.
+# - Do NOT add broad amazon domains; keep it specific.
+
+# --- Firmware / software update endpoints ---
+softwareupdates.amazon.com
+updates.amazon.com
+fireos.amazon.com
+
+# --- Download/CDN endpoints often used by system components ---
+amzdigitaldownloads.edgesuite.net
+
+# --- Device metrics / telemetry ---
+device-metrics.amazon.com
+device-metrics-us.amazon.com
+
+# --- Device capability / captive / service endpoints sometimes tied to update checks ---
+dcape-na.amazon.com
+
+# --- (Optional) account API; can impact sign-in/activation in some cases ---
+# api.amazon.com
