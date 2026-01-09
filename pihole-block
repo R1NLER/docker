@@ -22,3 +22,9 @@ dcape-na.amazon.com
 
 # --- (Optional) account API; can impact sign-in/activation in some cases ---
 # api.amazon.com
+
+# --- New entries ---
+firetvcaptiveportal.com
+com_amazon_firebat.triggers-v1.prod.mobile.weblab.a2z.com
+37d91df246990d1e43e5bae432b14aee5289a4cd0a1ba9ab738fd3bda3ea568.us-east-1.prod.service.minerva.devices.a2z.com
+6e89752714c7ef6e6e019957b12a7a807b4ff65f35888fe042d69b9a1c43521.us-east-1.prod.service.minerva.devices.a2z.com
